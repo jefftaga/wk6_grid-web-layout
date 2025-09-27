@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    background-image: url('saipan.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.left {
+    grid-row: 1 / span 2;
+    background-color: rgba(70, 130, 180, 0.8);
+}
+
+.top-right {
+    background-color: rgba(34, 183, 203, 0.8);
+}
+
+.bottom-right {
+    background-color: rgba(111, 34, 178, 0.8);
+}
+
+.footer {
+    grid-column: 1 / span 2;
+    background-color: rgba(250, 189, 66, 0.871);
+    color: #000;
+}
+
+blockquote {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.6;
+    border-left: 4px solid #bb7802;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.Accomplish li {
+    list-style-type: circle;
+}
+
+.Facts li {
+    list-style-type: upper-roman;
+}
